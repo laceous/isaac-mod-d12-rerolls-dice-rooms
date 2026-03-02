@@ -14,7 +14,7 @@ function mod:onGameStart()
     if type(state) == 'table' then
       if type(state.diceFaces) == 'table' then
         for i = 1, 6 do
-          if math.type(state.diceFaces[i]) == 'integer' then
+          if math.type(state.diceFaces[i]) == 'integer' and state.diceFaces[i] >= 0 and state.diceFaces[i] <= 10 then
             mod.state.diceFaces[i] = state.diceFaces[i]
           end
         end

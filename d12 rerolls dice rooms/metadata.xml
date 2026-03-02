@@ -8,7 +8,7 @@
 The D100 (and anything else that triggers the D12) is also supported.
 
 Mod Config Menu will let you set weights for the six different dice faces (pips). This will be applied when you first enter a dice room as well as to the D12. You can set all dice rooms to one, or only allow rolling between two and three.</description>
-    <version>1.1</version>
+    <version>1.2</version>
     <visibility>Public</visibility>
     <tag id="Lua"/>
     <tag id="Tweaks"/>
