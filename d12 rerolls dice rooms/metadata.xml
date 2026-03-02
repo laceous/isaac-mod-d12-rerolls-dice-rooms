@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>D12 Rerolls Dice Rooms</name>
+    <directory>d12 rerolls dice rooms</directory>
+    <id>3677029737</id>
+    <description>The D12 rerolls items on the floor: rocks, poops, pots, etc. This mod adds the dice floor in dice rooms to the list of things that will get rerolled (only if the dice floor hasn't already been triggered).
+
+The D100 (and anything else that triggers the D12) is also supported.
+
+Mod Config Menu will let you set weights for the six different dice faces (pips). This will be applied when you first enter a dice room as well as to the D12. You can set all dice rooms to one, or only allow rolling between two and three.</description>
+    <version>1.1</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Tweaks"/>
+</metadata>
