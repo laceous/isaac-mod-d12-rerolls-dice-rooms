@@ -3,6 +3,7 @@ local json = require('json')
 local game = Game()
 
 mod.rngShiftIdx = 35
+mod.onGameStartHasRun = false
 
 mod.state = {}
 mod.state.diceFaces = { 0, 0, 0, 0, 0, 0 } -- pips
@@ -21,10 +22,14 @@ function mod:onGameStart()
       end
     end
   end
+  
+  mod.onGameStartHasRun = true
+  mod:onNewRoom()
 end
 
 function mod:onGameExit()
   mod:save()
+  mod.onGameStartHasRun = false
 end
 
 function mod:save()
@@ -32,6 +37,10 @@ function mod:save()
 end
 
 function mod:onNewRoom()
+  if not mod.onGameStartHasRun then
+    return
+  end
+  
   local level = game:GetLevel()
   local room = level:GetCurrentRoom()
   local roomDesc = level:GetCurrentRoomDesc()
